@@ -1451,12 +1451,6 @@ setTimeout(() => {
 viewCountElement.style.transform = 'scale(1)';
 }, 300);
 }
-function getPeruTime() {
-const now = new Date();
-const options = { timeZone: 'America/Lima', hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit', year: 'numeric', month: '2-digit', day: '2-digit' };
-const formatter = new Intl.DateTimeFormat('es-PE', options);
-return formatter.format(now);
-}
 loadViewCount();
 setInterval(updateViewCount, 10000);
 const observerOptions = {
